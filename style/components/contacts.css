@@ -1,0 +1,99 @@
+/* CONTACTS */
+.contacts {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Центральный блок */
+.center {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+}
+
+/* Текст */
+.contacts p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Телефон и WhatsApp */
+.number,
+.number1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    color: rgb(127, 154, 59);
+}
+
+.number i,
+.number1 i {
+    font-size: 24px;
+    color: #000;
+    flex-shrink: 0;
+}
+
+/* Email */
+.center h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* -------------------- */
+/* АДАПТИВКА */
+/* -------------------- */
+
+/* Планшеты */
+@media (max-width: 1199px) {
+    .contacts {
+        padding: 60px 20px;
+    }
+
+    .contacts p {
+        font-size: 16px;
+    }
+
+    .number,
+    .number1 {
+        font-size: 16px;
+    }
+
+    .center h2 {
+        font-size: 18px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 767px) {
+    .contacts {
+        padding: 50px 15px;
+    }
+
+    .contacts p {
+        font-size: 14px;
+    }
+
+    .number,
+    .number1 {
+        font-size: 14px;
+    }
+
+    .number i,
+    .number1 i {
+        font-size: 20px;
+    }
+
+    .center h2 {
+        font-size: 16px;
+    }
+}

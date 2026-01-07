@@ -1,0 +1,109 @@
+.main_adv {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+    padding: 70px 20px 100px; /* больше снизу для линии */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-bottom: 1px solid #e0e0e0; /* ✅ нижняя линия */
+}
+
+/* Заголовок */
+.adv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.adv h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Сетка 2x2 */
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 60px 90px;
+    width: 100%;
+    justify-items: center;
+}
+
+/* Карточка преимущества */
+.details > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    max-width: 600px; /* одинаковая ширина */
+}
+
+/* Иконка */
+.details i {
+    color: #4E751B;
+    font-size: 30px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Текст */
+.details p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+}
+
+/* -------------------- */
+/* АДАПТИВКА */
+/* -------------------- */
+
+/* Планшеты */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .adv h1 {
+        font-size: 24px;
+    }
+
+    .details p {
+        font-size: 16px;
+    }
+
+    .details {
+        gap: 20px 40px;
+    }
+
+    .details > div {
+        max-width: 500px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 767px) {
+    .main_adv {
+        padding: 40px 15px 50px;
+    }
+
+    .adv h1 {
+        font-size: 22px;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        gap: 15px 0;
+    }
+
+    .details > div {
+        max-width: 100%;
+    }
+
+    .details p {
+        font-size: 14px;
+    }
+}
+
+

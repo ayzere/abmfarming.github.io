@@ -1,0 +1,86 @@
+.main_about {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin: 100px 0;
+}
+
+.about h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 45px;
+}
+
+.about p {
+    width: 100%;
+    max-width: 1083px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* -------------------- */
+/* АДАПТИВКА */
+/* -------------------- */
+
+/* Планшеты */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .main_container {
+        height: 55vh;
+    }
+    .container h1 {
+        font-size: 45px;
+        padding-bottom: 30px;
+    }
+    .container p {
+        font-size: 18px;
+        max-width: 600px;
+    }
+    .main_about {
+        padding: 80px 15px 40px;
+    }
+    .about h1 {
+        font-size: 26px;
+        padding-bottom: 35px;
+    }
+    .about p {
+        font-size: 16px;
+        max-width: 80%;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 767px) {
+    .main_container {
+        height: 45vh;
+    }
+    .container h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .container p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+    .main_about {
+        padding: 60px 10px 30px;
+        margin-top: 0;
+    }
+    .about h1 {
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+    .about p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+}
